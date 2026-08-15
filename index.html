@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AI Wire Desk</title>
+<meta name="description" content="A continuously refreshed wire desk of AI industry news, research, and product launches, sourced from RSS, Reddit, and Hacker News." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to report</a>
+
+<div class="ticker-wrap" aria-label="Latest headlines ticker">
+  <div class="ticker-track" id="ticker-track">Loading the wire…</div>
+</div>
+
+<header class="masthead">
+  <div class="masthead-top">
+    <h1>AI <span class="accent">Wire</span> Desk</h1>
+    <div class="live-status"><span class="dot" aria-hidden="true"></span><span id="live-status-text">Connecting…</span></div>
+  </div>
+  <p class="tagline">
+    A running desk of AI industry news — model releases, funding, research, tools, and policy —
+    pulled continuously from company blogs, arXiv, Reddit, and Hacker News, and filed by category as it lands.
+  </p>
+</header>
+
+<nav class="filters" id="filters" aria-label="Filter by desk"></nav>
+
+<main id="main-content">
+  <div id="desks"><p class="loading-state">Pulling the latest report…</p></div>
+</main>
+
+<footer>
+  Sourced continuously from RSS feeds (company blogs, arXiv, tech press), Reddit, and Hacker News ·
+  every item stamped with publish time and discovery time · categorized and summarized automatically ·
+  this is a personal aggregation tool, not affiliated with any source it links to.
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
